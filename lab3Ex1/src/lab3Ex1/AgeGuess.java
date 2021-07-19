@@ -19,12 +19,22 @@ public class AgeGuess {
 			int ageGuess; 
 			
 			//Asks the user for a guess, save the guess into the ageGuess variable
-			System.out.println("Guess the age:"); 
+			System.out.println("Guess my age:"); 
 			ageGuess = scan.nextInt(); 
+			
+			while (ageGuess != age) {
+				
+				System.out.println("You guessed incorrectly! Please guess again: "); 
+				ageGuess = scan.nextInt(); 
+			}
+			
+			if (ageGuess == age) {
+				System.out.println("You guessed correctly! I am " + age + " years old."); 
+			}
 			
 			
 			//Display the user guess and the correct answer
-			System.out.println("The age you guessed is " + ageGuess + ", and the correct age is " + age + "!");
+			//System.out.println("The age you guessed is " + ageGuess + ", and the correct age is " + age + "!");
 			
 			scan.close(); 
 		}
