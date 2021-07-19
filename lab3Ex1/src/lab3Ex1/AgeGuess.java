@@ -32,10 +32,6 @@ public class AgeGuess {
 				System.out.println("You guessed correctly! I am " + age + " years old."); 
 			}
 			
-			
-			//Display the user guess and the correct answer
-			//System.out.println("The age you guessed is " + ageGuess + ", and the correct age is " + age + "!");
-			
 			scan.close(); 
 		}
 		
