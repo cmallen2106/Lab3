@@ -22,16 +22,19 @@ public class AgeGuess {
 			System.out.println("Guess my age:"); 
 			ageGuess = scan.nextInt(); 
 			
+			//If user guesses incorrectly have user insert a different number 
 			while (ageGuess != age) {
 				
 				System.out.println("You guessed incorrectly! Please guess again: "); 
 				ageGuess = scan.nextInt(); 
 			}
 			
+			//if user guesses correctly 
 			if (ageGuess == age) {
 				System.out.println("You guessed correctly! I am " + age + " years old."); 
 			}
 			
+			//close the scanner
 			scan.close(); 
 		}
 		
