@@ -11,11 +11,22 @@ public class EvenNumSum {
 
 		Scanner scan = new Scanner (System.in); 
 		
+		//reads an integer value
 		int userInt; 
 		
 		System.out.println("Please enter an integer greater than 2: "); 
 		userInt = scan.nextInt();
 		
+		//reads an integer value and prints the sum of all even integers between 2 and the input value, inclusive
+		if (userInt >=2) {
+			int sum = 0; 
+			for (int even = 2; even <= userInt; even += 2) {
+				sum += even; 
+			}
+			System.out.println("The sum of all even numbers between 2 and your input: " + sum); 
+		}
+		//close sanner
+		scan.close(); 
 		
 	}
 
