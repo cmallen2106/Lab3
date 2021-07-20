@@ -17,6 +17,12 @@ public class EvenNumSum {
 		System.out.println("Please enter an integer greater than 2: "); 
 		userInt = scan.nextInt();
 		
+		//if input integer is less than 2
+				while (userInt < 2) {
+					System.out.println("Value must be greater than 2. Please enter a new number: "); 
+					userInt = scan.nextInt(); 
+				}
+		
 		//reads an integer value and prints the sum of all even integers between 2 and the input value, inclusive
 		if (userInt >=2) {
 			int sum = 0; 
@@ -24,12 +30,6 @@ public class EvenNumSum {
 				sum += even; 
 			}
 			System.out.println("The sum of all even numbers between 2 and your input: " + sum); 
-		}
-		
-		//if input integer is less than 2
-		while (userInt < 2) {
-			System.out.println("Value must be greater than 2. Please enter a new number: "); 
-			userInt = scan.nextInt(); 
 		}
 		
 		//close scanner
