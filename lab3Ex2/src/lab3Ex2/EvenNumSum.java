@@ -25,7 +25,14 @@ public class EvenNumSum {
 			}
 			System.out.println("The sum of all even numbers between 2 and your input: " + sum); 
 		}
-		//close sanner
+		
+		//if input integer is less than 2
+		while (userInt < 2) {
+			System.out.println("Value must be greater than 2. Please enter a new number: "); 
+			userInt = scan.nextInt(); 
+		}
+		
+		//close scanner
 		scan.close(); 
 		
 	}
