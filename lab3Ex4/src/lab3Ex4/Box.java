@@ -11,6 +11,7 @@ public class Box {
 	public static void main(String[] args) {
 		Box box = new Box(); 
 		box.setSize(); 
+		box.printBox(); 
 		 
 
 	}
@@ -20,6 +21,16 @@ public class Box {
 		size = 5; 
 	}
 	
+	//Add a method to this class named printBox with no parameters and void return type, that
+	//prints out to the screen a set of * (star) characters with size rows and size columns.
+	
+	public void printBox() {
+		for (int num = 1; num <= size; num++) {
+			for (int index = 1; index <= size; index++)
+				System.out.println("*"); 
+			System.out.println(); 
+		}
+	}
 	
 		 
 
